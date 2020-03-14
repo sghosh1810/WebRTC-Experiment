@@ -61,7 +61,7 @@ if (isset($_GET['logout'])) {
 <body>
 
 	<div class="header">
-		<h2>Home Page</h2>
+		<h2>Dashboard</h2>
 	</div>
 	
 	<!-- logged in user information -->
