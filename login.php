@@ -1,3 +1,4 @@
+<?php include('util/server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,41 +33,51 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+			 	<form method="post" class="login100-form validate-form" action="login.php" > 
+					<?php include('util/errors.php'); ?>
 					<span class="login100-form-title p-b-43">
-						Sign Up With Us
+						Login to continue
 					</span>
-
-
-					<div class="wrap-input100 validate-input" data-validate = "Valid name is required">
-						<input class="input100" type="text" name="name">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Name</span>
-					</div>
 					
 					
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email">
+					<div class="wrap-input100 validate-input" data-validate = "Valid Username is required">
+						<input class="input100" type="text" name="username">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Email</span>
+						<span class="label-input100">Username</span>
 					</div>
 					
 					
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
+						<input class="input100" type="password" name="password">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Password</span>
 					</div>
 
+					<div class="flex-sb-m w-full p-t-3 p-b-32">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
+
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
+			
+
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Sign up
+						<button type="submit" class="login100-form-btn" name="login_user">
+							Login
 						</button>
 					</div>
 					
 					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
-							Already have an account? <a href="login.html">Login</a> Here
+							or Sign up <a href="signup.php">Here</a>
 						</span>
 					</div>
 
