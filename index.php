@@ -38,7 +38,35 @@ if (isset($_GET['logout'])) {
 	<video id="localVideo" autoplay muted></video>
 	<video id="remoteVideo" autoplay></video>
 	<script src="js/script.js"></script>
+	<!--
+		TODO:
+		#1 Check for iframe stat
+		#2 Conds STEP-1 edit iframe css -> css/dash.css
+		#3 fetch data to fill tawk api
+		#4 extends STEP-3 alt -> shift to white label
+		#5 populate tawk json
+	    -------------------ask arnab sys update--------------
+	-->
 
+
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{};
+		Tawk_API.visitor = {
+		name : 'demo name',
+		email : 'demo@demo.com'
+	};
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/593a32884374a471e7c522c5/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
 </body>
 
 </html>
