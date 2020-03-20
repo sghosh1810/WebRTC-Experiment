@@ -47,7 +47,11 @@ if (isset($_GET['logout'])) {
 				<h2>Text Chat Area</h2>
 			</div>
 			<div class="modal-body" align="center">
+<<<<<<< HEAD
 				<iframe id="chatModal" src="https://chatify.cloud/" frameborder="0" width="400" height="500" ></iframe>
+=======
+				<iframe id="chatModal" src="https://tlk.io/" frameborder="0" width="400" height="500" ></iframe>
+>>>>>>> 61432e0fcbee4b006d8696c4adbc6aed0f26aec2
 			</div>
 			<div class="modal-footer" align="center">
 				<h3>Powered by &copy sghosh1403</h3>
