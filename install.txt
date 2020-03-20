@@ -1,3 +1,4 @@
 To change:
 1. util/server.php  ->  Database login
 2. index.html -> Website Link
+3. js/script.js -> Scaledrone key

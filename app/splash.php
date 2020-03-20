@@ -39,13 +39,6 @@ if (isset($_GET['logout'])) {
 	<link rel="stylesheet" type="text/css" href="../css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 <!--===============================================================================================-->
-<script>
-    function redirect(){
-        alert('http://localhost/WebRTC-Experiment/app/videochat.php#'+document.getElementById("code").value);
-        window.location.href='http://localhost/WebRTC-Experiment/app/videochat.php#'+document.getElementById("code").value;
-        
-    }
-</script>
 </head>
 <body style="background-color: #666666;">
 	
@@ -105,7 +98,7 @@ if (isset($_GET['logout'])) {
 <!--===============================================================================================-->
 	<script src="../vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-    <script src="../js/main.js"></script>
+	<script src="../js/main.js"></script>
 
 </body>
 </html>

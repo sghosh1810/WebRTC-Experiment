@@ -1,4 +1,3 @@
-
 function textCopy() {
     var dummy = document.createElement('input'),
     text = window.location.href;
@@ -10,6 +9,11 @@ function textCopy() {
     document.body.removeChild(dummy);
     alert("Copied Access Code: " + text);
 }
-function redirect(code) {
-    alert("Hi:"+code);
+
+function run(){
+    var url = window.location.href;
+    var url = url.substr(url.length - 5);
+    var chatModal = document.getElementById('chatModal');
+    chatModal.src = 'https://tlk.io/'+url;
+    
 }

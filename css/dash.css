@@ -35,3 +35,100 @@ video {
     color: rgba(0, 0, 0, 0.5);
 }
 
+.fab {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(92,157,255);
+    border-radius: 50%;
+    background-image: url("https://chatifycloud.s3.ap-south-1.amazonaws.com/webrtc/images/download+(1).png");
+    background-size: 30px;
+    background-repeat:no-repeat;
+    background-position: center;
+    box-shadow: 0 6px 10px 0 #666;
+    
+    font-size: 50px;
+    line-height: 70px;
+    color: white;
+    text-align: center;
+    
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    
+   transition: all 0.1s ease-in-out;
+ }
+ 
+ .fab:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 10%;
+    right: 10%;
+    top: 0;
+    width: 80%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #0f3e5d;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #0f3e5d;
+    color: white;
+}

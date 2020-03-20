@@ -47,7 +47,7 @@
             $password = md5($password_1);//encrypt the password before saving in the database
 
             $query = "INSERT INTO users (username, email, password) 
-                    VALUES('$username', '$email', '$password')";
+                    VALUES('$username', '$email', '$password', 'user')";
             mysqli_query($db, $query);
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
@@ -72,7 +72,14 @@
             if (mysqli_num_rows($results) == 1) {
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "You are now logged in";
-                header('location: app/splash.php');
+                $row = $results->fetch_assoc();
+                if($row["type"]!='admin'){
+                    header('location: app/splash.php');
+                }
+                else {
+                    header('location: app/admin.php');
+                }
+                
             }else {
                 array_push($errors, "Wrong username/password combination");
             }
