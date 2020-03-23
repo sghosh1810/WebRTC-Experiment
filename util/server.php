@@ -77,7 +77,8 @@
                     header('location: app/splash.php');
                 }
                 else {
-                    header('location: app/admin.php');
+                    $_SESSION['type']=$row['type'];
+                    header('location: app/admin/admin.php');
                 }
                 
             }else {

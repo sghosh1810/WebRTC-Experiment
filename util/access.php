@@ -1,8 +1,7 @@
 <?php
     if (isset($_POST['code'])) {
-        $url='http://localhost/WebRTC-Experiment/app/videochat.php#';
+        $url='http://localhost/WebRTC-Experiment/app/videochat/videochat.php#';
         $code=$_POST['code'];
-        
-        header('location: http://localhost/WebRTC-Experiment/app/videochat.php#'.$code);
+        header('location: http://localhost/WebRTC-Experiment/app/videochat/videochat.php#'.$code);
     }
 ?>

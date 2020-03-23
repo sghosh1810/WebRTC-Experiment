@@ -1,0 +1,111 @@
+body, body * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+}
+
+body.dark {
+	background: #111;
+}
+
+nav {
+	width: 100vw;
+	height: 80px;
+	background: #FFF;
+	box-shadow: 0 5px 45px 2px rgba(0, 0, 0, 0.05);
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	justify-content: center;
+	align-items: center;
+}
+nav.dark {
+	background: #232323;
+}
+
+#switchBtn {
+	justify-content: flex-end;
+	display: flex;
+	padding-right: 50px;
+}
+
+input {
+	display: none;
+}
+
+label {
+	width: 40px;
+	height: 16px;
+	background: #CCC;
+	border-radius: 1000px;
+	position: relative;
+	cursor: pointer;
+}
+
+label::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: #FFF;
+	border-radius: 100px;
+	position: absolute;
+	left: 0;
+	top: -3px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: 0.2s;
+}
+
+.fab {
+	 display: inline-block;
+   width: 70px;
+   height: 70px;
+   background-color: red;
+   border-radius: 50%;
+   box-shadow: 0 6px 10px 0 #666;
+
+   font-size: 30px;
+   line-height: 70px;
+   color: white;
+   text-align: center;
+
+
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.fab.text {
+	display: inline-block;
+	top: 10px;
+	bottom: 10px;
+}
+
+.fab:hover {
+	 display: inline-block;
+   box-shadow: 0 6px 14px 0 #666;
+   transform: scale(1.05);
+}
+
+label.switchbtn::before {
+	left: 20px;
+}
+
+/* Fading Style */
+.fading {
+	animation: fading 10s infinite
+}
+
+@keyframes fading {
+	0% {
+		opacity: 0
+	}
+	50% {
+		opacity: 1
+	}
+	100% {
+		opacity: 0
+	}
+}
