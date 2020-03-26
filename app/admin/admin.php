@@ -52,7 +52,7 @@ if (isset($_GET['logout'])) {
     <center>
         <div id="buttons">
             <p>
-                <a style="font-size:16px;color:#999;" class="btn btn-default btn-lg" href="#" >VIDEO CHAT</a>
+                <a style="font-size:16px;color:#999;" class="btn btn-default btn-lg" href="http://localhost/WebRTC-Experiment/app/videochat/videochat.php" >VIDEO CHAT</a>
 				<a style="font-size:16px;color:#999;" class="btn btn-default btn-lg" href="#" >SCREEN SHARE</a>
 				<a style="font-size:16px;color:#999;" class="btn btn-default btn-lg" href="#" >WHITEBOARD</a>
 				<a style="font-size:16px;color:#999;" class="btn btn-default btn-lg" href="admin.php?logout='1'" >LOGOUT</a>

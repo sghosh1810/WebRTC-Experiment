@@ -17,3 +17,7 @@ function run(){
     chatModal.src = 'https://tlk.io/'+url;
     
 }
+
+function buttonToggle() {
+    btnSetupNewRoom.disabled = document.getElementById('conference-name').disabled = false;
+}
