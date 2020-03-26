@@ -10,11 +10,6 @@ if (isset($_GET['logout'])) {
 	unset($_SESSION['username']);
 	header("location: http://localhost/WebRTC-Experiment/login.php");
 }
-if (!isset($_SESSION['type'])) {
-	echo '<script type="text/javascript">
-        buttonToggle();
-        </script>'; 
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,8 +51,9 @@ if (!isset($_SESSION['type'])) {
                 <button id="btn-stop-recording" style="display: none;">Stop Recording</button>
                 <br><br>
 
-                <input type="text" id="conference-name" value="abcdef" autocorrect=off autocapitalize=off size=20>
-                <button id="setup-new-room">Auto Open Or Join Room</button>
+                <input type="text" id="conference-name" value="Admin" <?php if (!isset($_SESSION['type'])){ ?> disabled <?php   } ?> autocorrect=off autocapitalize=off size=20>
+                <button id="setup-new-room" <?php if (!isset($_SESSION['type'])){ ?> disabled <?php   } ?> >Auto Open Or Join Room</button>
+                <button onclick="location.href='videochat.php?logout=1'">Logout</button>
                 </div>
                 <table style="width: 100%;" id="rooms-list"></table>
                 <div id="videos-container" style="margin: 20px 0;"></div>
@@ -69,7 +65,7 @@ if (!isset($_SESSION['type'])) {
                 <div class="modal-content">
                     <div class="modal-header" align="center">
                         <span class="close">&times;</span>
-                        <h2>Text Chat Area</h2>
+                        <h3>Text Chat Area</h3>
                     </div>
                     <div class="modal-body" align="center">
                         <iframe id="chatModal" src="https://chatify.cloud/" frameborder="0" width="400" height="500" ></iframe>
