@@ -1,2 +1,3 @@
-# WebRTC-Experiment
-Early lunch for Konzu, eh Tenno!
+# WebRTC Peer to Peer Video Chat
+Video chat application using webrtc,socket.io,node.js
+
